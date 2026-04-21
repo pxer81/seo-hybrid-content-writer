@@ -126,6 +126,8 @@ Examples:
     parser.add_argument("--skip-env", action="store_true", help="Skip Phase 0 environment check")
     parser.add_argument("--num", type=int, default=None,
                         help="Override SERP result count (skips interactive prompt for count)")
+    parser.add_argument("--mode", type=str, default=None, choices=["A", "B", "C"],
+                        help="Override analysis mode (A/B/C)")
     parser.add_argument("--region", default="in-en",
                         help="DDG region code, e.g. in-en, us-en, wt-wt (default: in-en)")
     parser.add_argument("--proxy", default=None,
@@ -163,11 +165,15 @@ Examples:
     # ------------------------------------------------------------------ #
     # Phase 0.5: Interactive
     # ------------------------------------------------------------------ #
-    user_mode, num_results = prompt_phase_0_5()
-
-    # CLI override for num
-    if args.num:
+    if args.mode and args.num:
+        user_mode = args.mode.upper()
         num_results = args.num
+    else:
+        user_mode, num_results = prompt_phase_0_5()
+        if args.mode:
+            user_mode = args.mode.upper()
+        if args.num:
+            num_results = args.num
 
     print()
     print(f"✅  Mode    : {user_mode}")

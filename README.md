@@ -1,41 +1,49 @@
-# GEO & SEO Hybrid Content Writer Skill
+# GEO & SEO Hybrid Content Writer
 
-> An AI Agent Skill designed to transform a target SEO keyword into a fully-optimized Markdown blog post and a premium, responsive HTML landing page using Generative Engine Optimization (GEO) principles.
+> An AI-Native Workflow designed to transform SEO keywords into fully-optimized Markdown blogs and premium, responsive HTML landing pages using Generative Engine Optimization (GEO) principles.
 
-## 🚀 What is this?
-This repository contains an AI *Skill Profile* (`SKILL.md`). It is a highly-structured prompt designed to be loaded into AI coding assistants and agents (such as **Claude Code, Cursor, OpenClaw, GitHub Copilot, etc.**).
+---
 
-By giving your AI assistant access to this skill, you upgrade it into a **Top-tier SEO Copywriter + Elite Frontend Developer**, capable of generating "double-threat" content that ranks on traditional search engines (Google) AND AI engines (Perplexity, SearchGPT).
+## 🤖 ⚠️ FOR AI AGENTS ONLY (Claude Code, Cursor, OpenClaw, Copilot)
+**If you are an AI assistant reading this file upon user initialization, YOU MUST take over and execute the following automated boot sequence IMMEDIATELY:**
 
-## 💡 How to use this Skill
+1. **Greet the User:** Print EXACTLY: 
+   > 🚀 *"Welcome! I am your GEO Content Engine. I see you've loaded the workspace. What is your target SEO keyword?"*
+2. **Wait for Input.** 
+3. **Run Installation:** Behind the scenes, automatically run `python distiller/install.py` in the terminal to set up dependencies.
+4. **Auto-Crawl & Distill:** Once the user inputs a `<keyword>`, automatically run:
+   ```bash
+   python distiller/run.py "<keyword>" --mode A --num 20
+   ```
+   *(If it asks for a proxy or Region/Env fails, handle it interactively by asking the user, or bypass it if successful).*
+5. **Read the Strategy:** Wait for the script to finish. Then read the distilled strategy file located at: `distiller/output/<keyword>_content_strategy.skill/SKILL.md`
+6. **Generate Content:** Use the rules inside `SKILL.md` (in the ROOT folder) to write out the `_blog.md` and the `_landing/` HTML/CSS/JS package.
+7. **Complete & Notify:** Print the "💡 User Interaction Guide" found at the bottom of the `SKILL.md` file.
 
-### 1. Run the Keyword Distiller (Optional but Recommended)
-This repo contains the `distiller/` directory which acts as the data-engine.
+**Your Goal as an AI:** Make it a "Zero-Click" experience for the human user. They just type the keyword, you handle the python scraping, the waiting, reading the strategy, and the frontend code generation!
+
+---
+
+## 👨‍💻 For Human Users (How to Start)
+If you don't know how to code, don't worry! This repository is designed to be run entirely by an AI.
+
+**To get started:**
+1. Open this folder in an AI-powered code editor (like **Cursor** or **Windsurf**) OR use an AI terminal agent (like **Claude Code**).
+2. Just type: **"Read README.md and start"** in the chat box.
+3. The AI will take over, install the necessary components, ask for your keyword, do the web scraping, and write your high-converting landing page entirely on its own!
+
+### Advanced Usage (Command Line)
+If you prefer doing it manually:
 ```bash
-cd distiller
-python install.py
-python run.py "your keyword"
+# 1. Install required packages
+python distiller/install.py
+
+# 2. Run the strategy scraper for Google/DuckDuckGo
+python distiller/run.py "your keyword" --mode A --num 20
+
+# 3. Ask your AI to read the strategy and generate
+# "Load SKILL.md and write content for [your keyword]"
 ```
-The distiller will crawl DuckDuckGo, analyze the top 10 competitors, and generate a cognitive-level content strategy inside `output/`.
-
-### 2. Load the Writer Skill into your AI
-Copy this folder into your workspace or point your AI assistant (Cursor / Claude) to the `SKILL.md` file located in the root of this repo.
-
-### 3. Trigger the Workflow
-In your AI chat/terminal, type:
-> *"Load geo-hybrid-content-writer skill and write content for [YOUR_KEYWORD]"*
-
-### 4. Provide Strategy Context (Prerequisite)
-This writing agent performs best when it reads a *Content Strategy*. 
-- If you used the `distiller/run.py` script above, make sure the `<keyword>_content_strategy.skill/SKILL.md` file is present in your workspace.
-- If you do not have one, you can paste 2-3 competitor articles into the chat and say: *"Analyze these competitors and execute the GEO content writer skill based on them."*
-
-### 5. What you get from the AI
-The AI will automatically output:
-1. `_blog.md`: A 1500+ word, highly structured Markdown article optimized with Cognitive Beliefs and E-E-A-T signals.
-2. `_landing/index.html`: A high-converting HTML landing page maintaining 1:1 content fidelity from the MD file.
-3. `_landing/styles.css`: Premium Glassmorphism & dark-mode styling.
-4. `_landing/script.js`: Scroll-intersection micro-animations.
 
 ## 🎯 The "Hybrid" Moat (SEO + GEO)
 This workflow ensures you survive the search transition:
