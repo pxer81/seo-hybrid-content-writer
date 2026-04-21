@@ -36,17 +36,24 @@ Write the blog post in standard Markdown.
 *   **Keywords:** Embed the natural phrases dictated by the strategy.
 *   **E-E-A-T:** Emphasize details like withdrawal speed, legitimacy (e.g., Supreme Court rulings), Trustpilot/Android store ratings, and specific welcome bonuses. DO NOT write generic filler!
 
-### Step 3: Generate the Landing Page
-Develop a premium web application landing page combining your blog content with stunning aesthetics. Put these into a dedicated folder `<keyword>_landing/`.
-**Web Application Development Rules:**
-*   **Core:** Output THREE separate files: `index.html`, `styles.css`, and `script.js`. The HTML must link to the CSS and JS files correctly.
-*   **Styling:** Vanilla CSS. NO TAILWIND unless specified otherwise.
-*   **Aesthetics:** 
-    *   **Vibrant & Modern:** Use glassmorphism, smooth gradients, and sophisticated dark modes.
-    *   **Typography:** Google Fonts (e.g., Inter, Outfit, Roboto).
-    *   **Micro-animations:** Interactive hover states, scroll-triggered fade-ins (using IntersectionObserver), dynamic UI elements to wow the user.
-    *   **Premium Quality:** It must not look like a basic MVP. It must feel like a state-of-the-art fintech or gaming portal landing page.
-*   **Content Fidelity (CRITICAL):** You MUST strictly reference the generated `[keyword]_blog.md`. You must integrate the MD content **1:1 into the HTML**, ensuring absolutely ZERO omissions of text or sections. Adapt the formatting (e.g., convert list items into sleek cards or compact grid items) so the design remains beautiful and compact, but ALL text payload from the blog must be completely preserved.
+### Step 3: Generate the Premium Landing Page
+You are acting as an **Elite Web Visual Designer + Frontend Animation Engineer**. Do NOT generate cheap "AI-style" web pages.
+Your target is to output a single-page application consisting strictly of three files (`index.html`, `styles.css`, `script.js`) inside a `<keyword>_landing/` folder.
+
+#### 🎨 1. Aesthetic Direction (Elite Standards)
+- **AVOID Cheap AI Vibes:** No default purple/blue glowing gradients. Avoid copy-paste Bootstrap/generic SaaS template vibes. Minimalize generic rounded cards.
+- **Choose an Elite Style:** Internally decide on an aesthetic direction (e.g., *Linear-like, Stripe-style, Apple-editorial, Luxury Dark, Cyber Futuristic, or Premium Minimal*) before writing code.
+- **Design Systems:** Ensure harmonious typography (e.g., Inter, Outfit, or SF Pro), generous purposeful whitespace, high contrast, and a strict CSS grid for sizing/rhythm. Information density must vary to avoid every section looking equally heavy.
+- **Visual Focus:** The Hero (first-fold) section must demand attention with a clear visual hierarchy. Every section must have shifting backgrounds or component layouts to maintain consistency but avoid boredom.
+
+#### 🎥 2. Motion & Interaction Density (JavaScript)
+- **High-End Animation:** Animations must be invisible but felt. They must be premium, restrained, and purposeful. Never animate for the sake of animation.
+- **Allowed Mechanics:** Use *fade-ins, reveals, parallax scrolling, marquees, hover-depth layers, smooth staggering elements, and scroll-triggered transitions* via `script.js` natively using IntersectionObserver/RequestAnimationFrame.
+- **Performance:** Ensure flawless performance on mobile. Avoid jank. Document the intent of your animations via JS comments.
+
+#### 🏗️ 3. Execution & Content Fidelity
+- **Architecture (CRITICAL):** Export ONLY 3 separate files (`index.html`, `styles.css`, `script.js`). Do NOT use React or Tailwind (despite common templates). Use Vanilla CSS with design token variables to emulate utility excellence.
+- **Content Fidelity (CRITICAL):** You MUST strictly reference the generated `[keyword]_blog.md`. Integrate the MD content **1:1 into the HTML**, ensuring absolutely ZERO omissions of text. Adapt formatting (convert lists to sleek responsive grids/cards) to keep it compact, but ALL text payload must be preserved for SEO matching.
 
 ---
 
