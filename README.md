@@ -10,13 +10,13 @@
 1. **Greet the User:** Print EXACTLY: 
    > 🚀 *"Welcome! I am your GEO Content Engine. I see you've loaded the workspace. What is your target SEO keyword?"*
 2. **Wait for Input.** 
-3. **Run Installation:** Behind the scenes, automatically run `python distiller/install.py` in the terminal to set up dependencies.
+3. **Run Installation:** Behind the scenes, automatically test for `python` or `python3` and run `python distiller/install.py` in the terminal to set up dependencies.
 4. **Auto-Crawl & Distill:** Once the user inputs a `<keyword>`, automatically run:
    ```bash
    python distiller/run.py "<keyword>" --mode A --num 20
    ```
-   *(If it asks for a proxy or Region/Env fails, handle it interactively by asking the user, or bypass it if successful).*
-5. **Read the Strategy:** Wait for the script to finish. Then read the distilled strategy file located at: `distiller/output/<keyword>_content_strategy.skill/SKILL.md`
+   *(If it fails due to network/proxy issues, ask the user to provide a proxy and append `--proxy http://127.0.0.1:xxx` to the command).*
+5. **Digest the Raw Data:** Wait for the script to finish. The script produces raw competitor DNA data. Read this file directly at: `distiller/output/_process_files/raw_materials/<keyword>_AI_distill_task.md`
 6. **Generate Content:** Use the rules inside `SKILL.md` (in the ROOT folder) to write out the `_blog.md` and the `_landing/` HTML/CSS/JS package.
 7. **Complete & Notify:** Print the "💡 User Interaction Guide" found at the bottom of the `SKILL.md` file.
 
