@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Data & output (generated files — do not commit)
+data/
+output/
+
+# Partial / checkpoint files
+*_partial.json
+*_tmp.*
+*.bak
+*checkpoint*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Secrets / credentials (just in case)
+*.env
+.env
+secrets.json
+cookies.json
