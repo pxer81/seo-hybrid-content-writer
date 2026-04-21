@@ -14,9 +14,9 @@ Design principles:
   - Proxy support: set HTTPS_PROXY env var, or edit PROXY_URL below
 
 Usage:
-    python crawl_serp.py "best rummy app india"
-    python crawl_serp.py "best rummy app india" -o ./data --num 20
-    python crawl_serp.py "best rummy app india" --num 30 --region in-en --proxy http://127.0.0.1:7890
+    python crawl_serp.py "best budget mechanical keyboard"
+    python crawl_serp.py "best budget mechanical keyboard" -o ./data --num 20
+    python crawl_serp.py "best budget mechanical keyboard" --num 30 --region in-en --proxy http://127.0.0.1:7890
 """
 
 import json

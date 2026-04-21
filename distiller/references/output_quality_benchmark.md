@@ -101,7 +101,7 @@ description: >
 
 > **Belief 1**: The reader is a mobile-first casual gamer who has already downloaded
 > 2–3 apps and is looking to switch. They are NOT a complete beginner.
-> Evidence: 8/10 top pages assume prior app experience; none explain what rummy is.
+> Evidence: 8/10 top pages assume prior app experience; none explain what mechanical keyboard is.
 >
 > **Belief 2**: "Real money" is a positive signal, not a concern to address.
 > Evidence: 9/10 pages lead with earning potential; only 1 page mentions responsible gaming.

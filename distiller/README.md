@@ -28,7 +28,7 @@ Input a keyword → crawl top pages → distill → get two things:
 Turns "open 20 tabs and guess" into "run one command, get a strategy".
 
 ```
-distill keyword: best rummy app india
+distill keyword: best budget mechanical keyboard
 ```
 
 Pipeline auto-runs:
@@ -53,14 +53,14 @@ Two deliverables:
 A single installable folder:
 
 ```
-.claude/skills/best_rummy_app_india_content_strategy.skill/
+.claude/skills/best_budget_mechanical_keyboard_content_strategy.skill/
 └── SKILL.md
 ```
 
 After installing, tell your AI:
 
 ```
-Using the best_rummy_app_india content strategy, write a 1500-word review article
+Using the best_budget_mechanical_keyboard content strategy, write a 1500-word review article
 ```
 
 The AI follows the distilled formula — not generic SEO advice, but patterns
@@ -114,13 +114,13 @@ Result count: 10 (quick) / 20 (recommended) / 30 (deep)
 git clone https://github.com/your-org/seo-keyword-distiller.git
 cd seo-keyword-distiller
 python install.py
-python run.py "best rummy app india"
+python run.py "best budget mechanical keyboard"
 ```
 
 Or tell your AI assistant (with this SKILL.md loaded):
 
 ```
-Distill keyword: best rummy app india
+Distill keyword: best budget mechanical keyboard
 ```
 
 <details>
@@ -128,11 +128,11 @@ Distill keyword: best rummy app india
 
 ```bash
 python scripts/check_env.py
-python scripts/crawl_serp.py "best rummy app india" -o ./data --num 20
-python scripts/analyze.py ./data/best_rummy_app_india_pages.json -o ./data
-python scripts/deep_analyze.py ./data/best_rummy_app_india_analysis.json \
-    "best rummy app india" -o ./output \
-    --pages ./data/best_rummy_app_india_pages.json --mode A
+python scripts/crawl_serp.py "best budget mechanical keyboard" -o ./data --num 20
+python scripts/analyze.py ./data/best_budget_mechanical_keyboard_pages.json -o ./data
+python scripts/deep_analyze.py ./data/best_budget_mechanical_keyboard_analysis.json \
+    "best budget mechanical keyboard" -o ./output \
+    --pages ./data/best_budget_mechanical_keyboard_pages.json --mode A
 ```
 
 </details>

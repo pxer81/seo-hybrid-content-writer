@@ -271,7 +271,7 @@ seo-keyword-distiller/
 Tell your AI assistant:
 
 ```
-Distill the keyword: best rummy app india
+Distill the keyword: best budget mechanical keyboard
 ```
 
 The AI must run Phase 0.5 interaction first, then follow the pipeline.
@@ -279,20 +279,20 @@ The AI must run Phase 0.5 interaction first, then follow the pipeline.
 ### One-click CLI
 
 ```bash
-python run.py "best rummy app india"
-python run.py "best rummy app india" --num 20 --lang en --country in
-python run.py "best rummy app india" --skip-env
+python run.py "best budget mechanical keyboard"
+python run.py "best budget mechanical keyboard" --num 20 --lang en --country in
+python run.py "best budget mechanical keyboard" --skip-env
 ```
 
 ### Manual Step-by-Step
 
 ```bash
 python scripts/check_env.py
-python scripts/crawl_serp.py "best rummy app india" -o ./data --num 20
-python scripts/analyze.py ./data/best_rummy_app_india_pages.json -o ./data
+python scripts/crawl_serp.py "best budget mechanical keyboard" -o ./data --num 20
+python scripts/analyze.py ./data/best_budget_mechanical_keyboard_pages.json -o ./data
 python scripts/deep_analyze.py \
-    ./data/best_rummy_app_india_analysis.json "best rummy app india" \
-    -o ./output --pages ./data/best_rummy_app_india_pages.json --mode A
+    ./data/best_budget_mechanical_keyboard_analysis.json "best budget mechanical keyboard" \
+    -o ./output --pages ./data/best_budget_mechanical_keyboard_pages.json --mode A
 ```
 
 ---

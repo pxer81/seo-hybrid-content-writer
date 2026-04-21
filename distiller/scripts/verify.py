@@ -5,7 +5,7 @@ Checks that final deliverables (HTML report + Skill folder) meet acceptance crit
 Also detects junk / partial files left in the output directory.
 
 Usage:
-    python verify.py ./output "best rummy app india"
+    python verify.py ./output "best budget mechanical keyboard"
 """
 
 import os

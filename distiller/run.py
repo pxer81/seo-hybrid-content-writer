@@ -11,9 +11,9 @@ Orchestrates the full pipeline:
   Phase 4  : Output verification
 
 Usage:
-    python run.py "best rummy app india"
-    python run.py "best rummy app india" --num 20 --lang en --country in
-    python run.py "best rummy app india" --skip-env
+    python run.py "best budget mechanical keyboard"
+    python run.py "best budget mechanical keyboard" --num 20 --lang en --country in
+    python run.py "best budget mechanical keyboard" --skip-env
 """
 
 import sys
@@ -117,9 +117,9 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python run.py "best rummy app india"
-  python run.py "top online casino us" --num 20 --lang en --country us
-  python run.py "best rummy app india" --skip-env
+  python run.py "best budget mechanical keyboard"
+  python run.py "best productivity monitor" --num 20 --lang en --country us
+  python run.py "best budget mechanical keyboard" --skip-env
         """,
     )
     parser.add_argument("keyword", help="SEO keyword to research")
