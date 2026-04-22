@@ -53,7 +53,8 @@ Your target is to output a single-page application consisting strictly of three 
 
 #### 🏗️ 3. Execution & Content Fidelity
 - **Architecture (CRITICAL):** Export ONLY 3 separate files (`index.html`, `styles.css`, `script.js`). Do NOT use React or Tailwind (despite common templates). Use Vanilla CSS with design token variables to emulate utility excellence.
-- **Content Fidelity (CRITICAL):** You MUST strictly reference the generated `[keyword]_blog.md`. Integrate the MD content **1:1 into the HTML**, ensuring absolutely ZERO omissions of text. Adapt formatting (convert lists to sleek responsive grids/cards) to keep it compact, but ALL text payload must be preserved for SEO matching.
+- **Content Fidelity (CRITICAL):** You MUST strictly reference the generated `[keyword]_blog.md`. Integrate the MD content **1:1 into the HTML**, ensuring absolutely ZERO omissions of text. **DO NOT SUMMARIZE.**
+  *How to do this elegantly:* Break long blog paragraphs naturally into semantic HTML nodes to avoid walls of text. For instance, if the blog discusses a product, map the introductory sentence into a `<p class="card-desc">` and its core feature into a `<p class="card-highlight">`. Ensure the *entire* text payload string is preserved within the UI components for SEO keyword density tracking.
 
 ---
 
