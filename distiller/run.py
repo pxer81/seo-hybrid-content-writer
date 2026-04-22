@@ -136,6 +136,9 @@ Examples:
     parser.add_argument("--output-dir", default="./output", help="Output directory (default: ./output)")
     args = parser.parse_args()
 
+    args.data_dir = os.path.abspath(args.data_dir)
+    args.output_dir = os.path.abspath(args.output_dir)
+
     keyword = args.keyword
     python = sys.executable
     safe_kw = safe_filename(keyword)
